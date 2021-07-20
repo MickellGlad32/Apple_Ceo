@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <%-include('partials/head') %> 
+  </head>
+  <body>
+    <%-include('partials/nav')%>
+    <% CEOs.forEach((CEO) => { %>
+        <h2><%= CEO.name %></h2>
+        <a href="/CEOs/<%= CEO.slug %>">Detailed Info</a>
+   <% }) %> 
+    
+  </body>
+</html>
